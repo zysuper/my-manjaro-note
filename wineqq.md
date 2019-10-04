@@ -33,3 +33,9 @@ env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" winecfg # QQ 版本
 ```
 
 使用 winecfg 修改 显示 -> 屏幕分辨率 -> 120 dpi
+
+## 解决 System Tray 问题
+
+从 gnome 3.3 之后，著名的 TopIconPlus 可能处于不可用状态，需要使用 Tray icons 扩展
+
+[goto tray icons](https://extensions.gnome.org/extension/1503/tray-icons/)
