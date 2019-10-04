@@ -1,4 +1,4 @@
-# 如何实用 deepin wine 运行 windows 程序
+# 如何使用 deepin wine 运行 windows 程序
 
 1. 拷贝一份 Deepin-qq 环境
 
