@@ -6,6 +6,14 @@
 sudo pacman -S kubectl-bin
 ```
 
+## 设置 kubectl 命令 在 zsh 下的补全
+
+修改 ~/.zshrc
+
+```sh
+source <(kubectl completion zsh)
+```
+
 ## kvm 支持包安装
 
 ### 软件安装

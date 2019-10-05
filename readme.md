@@ -2,8 +2,8 @@
 
 1. [软件源设置](./base.md)
 2. [输入法安装](./im.md)
-3. [QQ安装](./wineqq.md)
-4. [dropbox安装](./dropbox.md)
+3. [QQ 安装](./wineqq.md)
+4. [dropbox 安装](./dropbox.md)
 5. [deepin wine 实用技巧](./deepin-wine.md)
 6. [vscode hidpi 输入法框位置偏移问题](./fix-vscode-im-error-position.md)
 7. [emoji](./emoji.md)
