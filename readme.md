@@ -6,3 +6,5 @@
 4. [dropbox安装](./dropbox.md)
 5. [deepin wine 实用技巧](./deepin-wine.md)
 6. [vscode hidpi 输入法框位置偏移问题](./fix-vscode-im-error-position.md)
+7. [emoji](./emoji.md)
+8. [minikube 实验环境](./mini-kube.md)
