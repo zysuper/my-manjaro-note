@@ -1,6 +1,6 @@
 # 搭建 minikube 实验环境
 
-## 安装 kubectl 
+## 安装 kubectl
 
 ```sh
 sudo pacman -S kubectl-bin
@@ -22,6 +22,12 @@ source <(kubectl completion zsh)
 sudo pacman -S libvirt
 sudo pacman -S qemu-git
 sudo pacman -S ebtables
+```
+
+### 添加用户到 kvm 组
+
+```sh
+sudo usermod -aG kvm $(whoami)
 ```
 
 ### 开启 AMD-Vi/Intel VT-d (需要处理器支持) 内核支持
@@ -120,7 +126,7 @@ minikube config set vm-driver kvm2
 
 ```sh
 #使用之前设定的默认驱动，也可使用 --vm-driver=kvm2 手动指明驱动
-minikube start 
+minikube start
 ```
 
 输出
@@ -132,7 +138,7 @@ minikube start
 🔥  Creating kvm2 VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
 🚜  Pulling images ...
-🚀  Launching Kubernetes ... 
+🚀  Launching Kubernetes ...
 ⌛  Verifying: apiserver proxy etcd scheduler controller dns
 🏄  Done! kubectl is now configured to use "minikube"
 ```
@@ -150,4 +156,5 @@ minikube config set memory 4096
 ```
 
 ## 参考链接
+
 [minikube document](https://minikube.sigs.k8s.io/docs/start/linux/)
