@@ -28,11 +28,11 @@ yay -S lib32-freetype2-infinality-ultimate
 ### 解决 hidpi 下字体太小问题
 
 ```sh
-env WINEPREFIX="$HOME/.deepinwine/Deepin-TIM" winecfg # TIM 版本
-env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" winecfg # QQ 版本
+env WINEPREFIX="$HOME/.deepinwine/Deepin-TIM" deepin-wine winecfg # TIM 版本
+env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" deepin-wine winecfg # QQ 版本
 ```
 
-使用 winecfg 修改 显示 -> 屏幕分辨率 -> 120 dpi
+使用 winecfg 修改 显示 -> 屏幕分辨率 -> 288 dpi
 
 ## 解决 System Tray 问题
 
