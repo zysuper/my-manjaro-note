@@ -1,6 +1,38 @@
 # 安装输入法
 
-## 安装搜狗输入法
+## 安装小企鹅输入法 + sunpinyin + 导入 sougou 细胞库
+
+```sh
+sudo pacman -S fcitx-im   
+sudo pacman -S fcitx-configtool 
+sudo pacman -S fcitx-sunpinyin
+```
+
+## 导入 sougou 细胞库
+
+### 下载细胞库
+
+[-> 搜狗输入法细胞库 <-](https://pinyin.sogou.com/)
+
+### 细胞库导入
+
+```sh
+git clone https://github.com/sunpinyin/sunpinyin
+cd python/importer
+python2.7 import_sogou_celldict.py ./computer2.scel
+```
+
+## 正确配置环境变量
+
+vi ~/.xprofile
+
+```sh
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+```
+
+## 安装搜狗输入法 (不推荐)
 
 ```sh
 sudo pacman -S fcitx-lilydjwg-git 
@@ -18,7 +50,7 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
 
-## 安装 fcitx5 输入法   
+## 安装 fcitx5 输入法 (不推荐)  
 
 ```sh
 sudo pacman -S yay 
