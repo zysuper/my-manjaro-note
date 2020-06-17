@@ -34,6 +34,10 @@ export XMODIFIERS="@im=fcitx"
 
 ## 安装搜狗输入法 qt5 (推荐)
 
+### 前置检查
+
+如果你之前安装了 `fcitx-lilydjwg-git`, `fcitx-sogoupinyin`,请先卸载掉。
+
 ```sh
 yay -S aur/fcitx-sogouimebs
 sudo pacman -S fcitx-configtool
