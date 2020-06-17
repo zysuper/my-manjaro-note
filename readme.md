@@ -9,3 +9,5 @@
 7. [emoji](./emoji.md)
 8. [oh-my-zsh](./zsh.md)
 9. [minikube 实验环境](./mini-kube.md)
+10.[高分屏与外接低分屏幕混用体验](./double-display.md)
+11.[蓝牙耳机支持 aptx](./bluetooth.md)

@@ -32,11 +32,10 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
 
-## 安装搜狗输入法 (不推荐)
+## 安装搜狗输入法 qt5 (推荐)
 
 ```sh
-sudo pacman -S fcitx-lilydjwg-git 
-sudo pacman -S fcitx-sogoupinyin
+yay -S aur/fcitx-sogouimebs
 sudo pacman -S fcitx-configtool
 ```
 
