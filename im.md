@@ -1,5 +1,15 @@
 # 安装输入法
 
+## 百度输入法
+
+### 安装
+
+```sh
+ yay -S fcitx-baidupinyin
+ cp -r /tmp/data ~/.config/BaiduPY.user
+ sudo pacman -S fcitx-configtool
+```
+
 ## 安装小企鹅输入法 + sunpinyin + 导入 sougou 细胞库
 
 ```sh
