@@ -10,6 +10,21 @@
  sudo pacman -S fcitx-configtool
 ```
 
+### 修改显示字体
+
+```sh
+cd /home/zysuper/.config/fcitx/baidupy
+vim bdconf
+```
+
+修改文件 bdconf
+
+```ini
+[BaiduPinyin]
+...
+FontSize=14
+```
+
 ## 安装小企鹅输入法 + sunpinyin + 导入 sougou 细胞库
 
 ```sh
