@@ -1,5 +1,21 @@
 # 安装输入法
 
+## 使用 ibus 拼音 + 搜狗短语库
+
+```sh
+sudo pacman -S ibus-pinyin
+```
+
+下载 [搜狗短语库](http://code.google.com/p/hslinuxextra/downloads/list)
+
+```sh
+cd /usr/share/pyzy/db
+# 拷贝下载的短语库到这个路径.
+sudo cp downloaded.db ./local.db
+# 重启 bus.
+ibus restart
+```
+
 ## 百度输入法
 
 ### 安装
@@ -28,8 +44,8 @@ FontSize=14
 ## 安装小企鹅输入法 + sunpinyin + 导入 sougou 细胞库
 
 ```sh
-sudo pacman -S fcitx-im   
-sudo pacman -S fcitx-configtool 
+sudo pacman -S fcitx-im
+sudo pacman -S fcitx-configtool
 sudo pacman -S fcitx-sunpinyin
 ```
 
