@@ -1,4 +1,4 @@
-## gnome-shell 扩展
+# gnome-shell 扩展
 [-> Hide Top Bar <-](https://github.com/mlutfy/hidetopbar)
 
 ## 配置 alt-tab 在窗口间切换
