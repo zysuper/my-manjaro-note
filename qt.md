@@ -1,5 +1,6 @@
-## qt project auto hidpi scale
+# qt project auto hidpi scale
 
 ```sh
 QT_AUTO_SCREEN_SCALE_FACTOR=1
 ```
+

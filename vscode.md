@@ -1,4 +1,4 @@
-## vscode setting
+# vscode setting
 
 ### install zh language pack
 

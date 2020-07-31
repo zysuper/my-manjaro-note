@@ -2,7 +2,7 @@
 
 ## 安装软件
 
-两种二选一
+### 两种二选一
 
 ```sh
 pacman -S deepin.com.qq.office # TIM 版本
@@ -39,3 +39,4 @@ env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" deepin-wine winecfg # QQ 版本
 从 gnome 3.3 之后，著名的 TopIconPlus 可能处于不可用状态，需要使用 Tray icons 扩展
 
 [goto tray icons](https://extensions.gnome.org/extension/1503/tray-icons/)
+
