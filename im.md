@@ -1,5 +1,79 @@
 # 安装输入法
 
+## 安装 fcitx5 输入法 (推荐)  
+
+```sh
+sudo pacman -S yay
+```
+
+### 开启 aur 源
+
+### 安装以下包 (!! 非 kde 环境。 kde 环境自己看: [Fcitx5 Config](https://wiki.archlinux.org/index.php/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)))
+
+```sh
+# 安装 各种通用输入法，以及皮肤，输入法模块
+sudo pacman -S fcitx5 fcitx5-chinese-addons fcitx5-material-color fcitx5-gtk
+# 配置工具(!!! 非 kde 环境)，会连带安装 fcitx5 相关组件
+yay -S fcitx5-config-qt-git
+# 安装词库
+sudo pacman fcitx5-pinyin-moegirl
+yay -S fcitx5-pinyin-zhwiki
+```
+
+### 修改 .xprofile
+
+```
+export GTK_IM_MODULE=fcitx5
+export XMODIFIERS="@im=fcitx5"
+export QT_IM_MODULE=fcitx5
+XMODIFIERS DEFAULT=@im=fcitx5
+```
+
+### 增加启动项目
+
+~/.config/autostart/fcitx5.desktop
+
+```
+[Desktop Entry]
+Name[ca]=Fcitx 5
+Name[da]=Fcitx 5
+Name[de]=Fcitx 5
+Name[ko]=Fcitx 5
+Name[zh_CN]=Fcitx 5
+Name=Fcitx 5
+GenericName[ca]=Mètode d'entrada
+GenericName[da]=Inputmetode
+GenericName[de]=Eingabemethode
+GenericName[ja]=入力メソッド
+GenericName[ko]=입력기
+GenericName[ru]=Метод ввода
+GenericName[zh_CN]=输入法
+GenericName[zh_TW]=輸入法
+GenericName=Input Method
+Comment[ca]=Mètode d'entrada estàndard
+Comment[da]=Start inputmetode
+Comment[de]=Eingabemethode starten
+Comment[ko]=입력기 시작
+Comment[zh_CN]=启动输入法
+Comment=Start Input Method
+Exec=/usr/bin/fcitx5
+Icon=fcitx
+Terminal=false
+Type=Application
+Categories=System;Utility;
+StartupNotify=false
+X-GNOME-AutoRestart=true
+X-GNOME-Autostart-Notify=false
+X-KDE-autostart-after=panel
+X-KDE-StartupNotify=false
+```
+
+### 重启系统后、用 fcitx5-config-qt 配置
+
+* 添加拼音输入法
+* 开启预测
+* 开启云拼音
+
 ## 使用 ibus 拼音 + 搜狗短语库
 
 ```sh
@@ -93,22 +167,6 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
-
-## 安装 fcitx5 输入法 (不推荐)  
-
-```sh
-sudo pacman -S yay 
-```
-
-## 开启 aur 源
-
-## 安装以下包
-
-* fcitx5-git 输入法基础框架主程序
-* fcitx5-chinese-addons-git 简体中文输入的支持，云拼音
-* fcitx5-gtk-git gtk 程序的支持
-* fcitx5-qt4-git qt4 的支持
-* fcitx5-qt5-git qt5 的支持
 
 ## config ~/.xprofile
 
