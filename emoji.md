@@ -4,7 +4,7 @@
 sudo pacman -S noto-fonts-emoji
 ```
 
-## 其他方案
+# 其他方案
 
 
 ```sh
