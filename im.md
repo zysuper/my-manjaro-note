@@ -12,9 +12,8 @@ sudo pacman -S yay
 
 ```sh
 # 安装 各种通用输入法，以及皮肤，输入法模块
-sudo pacman -S fcitx5 fcitx5-chinese-addons fcitx5-material-color fcitx5-gtk
-# 配置工具(!!! 非 kde 环境)，会连带安装 fcitx5 相关组件
-yay -S fcitx5-config-qt-git
+sudo pacman -S fcitx5-git fcitx5-chinese-addons-git fcitx5-gtk-git fcitx5-config-qt-git fcitx5-material-color
+
 # 安装词库
 sudo pacman fcitx5-pinyin-moegirl
 yay -S fcitx5-pinyin-zhwiki
