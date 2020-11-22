@@ -11,3 +11,6 @@
 9. [minikube 实验环境](./mini-kube.md)
 10. [高分屏与外接低分屏幕混用体验](./double-display.md)
 11. [蓝牙耳机支持 aptx](./bluetooth.md)
+12. [键盘健位修改](./keyboard.md)
+13. [l2tp](./L2TP.md)
+14. [virtualbox](./virtualbox.md)
