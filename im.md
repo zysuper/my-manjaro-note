@@ -12,10 +12,10 @@ sudo pacman -S yay
 
 ```sh
 # 安装 各种通用输入法，以及皮肤，输入法模块
-sudo pacman -S fcitx5-git fcitx5-chinese-addons-git fcitx5-gtk-git fcitx5-config-qt-git fcitx5-material-color
+sudo pacman -S fcitx5-git fcitx5-chinese-addons-git fcitx5-gtk-git fcitx5-configtool-git fcitx5-material-color
 
 # 安装词库
-sudo pacman fcitx5-pinyin-moegirl
+sudo pacman -S fcitx5-pinyin-moegirl
 yay -S fcitx5-pinyin-zhwiki
 ```
 
@@ -67,7 +67,7 @@ X-KDE-autostart-after=panel
 X-KDE-StartupNotify=false
 ```
 
-### 重启系统后、用 fcitx5-config-qt 配置
+### 重启系统后、用 fcitx5-configtool-git 配置
 
 * 添加拼音输入法
 * 开启预测
