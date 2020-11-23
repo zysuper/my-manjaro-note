@@ -1,7 +1,7 @@
 # 微信程序
 
 ```sh
-sudo pacman -S com.qq.weixin.deepin
+yay -S com.qq.weixin.deepin
 ```
 
 ## 微信输入框字体为方框
@@ -24,4 +24,4 @@ env WINEPREFIX="$HOME/.deepinwine/Deepin-TIM" /home/$USER/.deepinwine/deepin-win
 
 `Software\\Microsoft\\Windows NT\\CurrentVersion\\FontLink\\SystemLink`
 
-每种字体都增加 `msyh.ttf,Microsoft Yahei\0`
+每种字体都增加 `msyh.ttf,Microsoft Yahei`
