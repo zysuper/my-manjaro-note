@@ -6,6 +6,6 @@
 ## sony mdx-1000 aptx supported
 
 ```sh
-yay -S pulseaudio-modules-bt-git
-yay -S libldac-git #可选
+yay -S pulseaudio-modules-bt
+yay -S libldac #可选
 ```
