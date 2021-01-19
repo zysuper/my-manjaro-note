@@ -12,11 +12,7 @@ sudo pacman -S yay
 
 ```sh
 # 安装 各种通用输入法，以及皮肤，输入法模块
-sudo pacman -S fcitx5-git fcitx5-chinese-addons-git fcitx5-gtk-git fcitx5-configtool-git fcitx5-material-color
-
-# 安装词库
-sudo pacman -S fcitx5-pinyin-moegirl
-yay -S fcitx5-pinyin-zhwiki
+sudo pacman -S fcitx5-chinese-addons fcitx5-configtool fcitx5 fcitx5-gtk fcitx5-material-color fcitx5-pinyin-moegirl fcitx5-pinyin-zhwiki libime 
 ```
 
 ### 修改 .xprofile
