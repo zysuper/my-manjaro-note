@@ -34,3 +34,11 @@ chmod a+x gradlew
 ```sh
 sh ./configure --disable-warnings-as-errors
 ```
+
+## 修复 idea 使用 fcitx5 输入框没法重建问题
+
+Help -> Edit Custom VM Options
+
+```properties
+-Drecreate.x11.input.method=true
+```
